@@ -1,0 +1,96 @@
+/* src/App.css */
+
+/* Existing Styles */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #002147; /* Darkish blue */
+  color: #ffffff; /* White text for readability */
+  font-family: Arial, sans-serif;
+}
+
+.full-height-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* White Cards */
+.card-custom {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text for contrast */
+  border: none; /* Remove border if desired */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+}
+
+/* Customized Navbar */
+.navbar-custom {
+  background-color: #002147; /* Darkish blue */
+  padding: 0.5rem 1rem; /* Reduced padding to decrease height */
+  height: 60px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar Links */
+.navbar-custom a {
+  color: #ffffff !important; /* White links */
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.navbar-custom a:hover {
+  color: #a0c4ff !important; /* Light blue on hover */
+}
+
+/* Ensure Modals Have Dark Background with White Text */
+.modal-content-custom {
+  background-color: #002147;
+  color: #ffffff;
+  border: none;
+}
+
+/* Override Bootstrap's Modal Close Button */
+.modal-content-custom .btn-close {
+  filter: invert(1); /* Make the close button visible on dark background */
+}
+
+/* Ensure Outline Buttons Have White Text */
+.btn-outline-primary, .btn-outline-success {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-outline-primary:hover, .btn-outline-success:hover {
+  background-color: #ffffff;
+  color: #002147;
+}
+
+/* New Styles for Landing Page */
+
+/* White Background for Landing Page */
+.landing-page-background {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text for contrast */
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Orange Border for Landing Page Cards */
+.landing-card-border {
+  border: 2px solid orange; /* Orange border */
+}
+
+/* Optional: Adjust Link Colors on Landing Page */
+.landing-page-background a {
+  color: #002147 !important; /* Darkish blue links */
+}
+
+.landing-page-background a:hover {
+  color: orange !important; /* Orange on hover */
+}
